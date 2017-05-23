@@ -5,17 +5,16 @@
 
 int main(){
 
-	/* Open txt file to write data */
-   	FILE *finalHeatDistribution;
-   	finalHeatDistribution = fopen("finalHeatDistribution.txt","w");
+/* Open txt file to write data */
+   FILE *finalHeatDistribution;
+   finalHeatDistribution = fopen("finalHeatDistribution.txt","w");
 
-    if(finalHeatDistribution == NULL)
-  	{
+   if(finalHeatDistribution == NULL){
       printf("Error! finalHeatDistribution");   
       exit(1);             
-   	}
+   }
 
-  /* Declare variables */ 
+/* Declare variables */ 
     int i,j,k,n;
     int N=10;
     /*int Ny=20;*/
