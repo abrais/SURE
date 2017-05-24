@@ -4,15 +4,14 @@
 #define PI 3.1415926535897932384
 
 int main(){
-/* Adding my name */
-/* Open txt file to write data */
+/* Open txt file to write data 
    FILE *finalHeatDistribution;
    finalHeatDistribution = fopen("finalHeatDistribution.txt","w");
 
    if(finalHeatDistribution == NULL){
       printf("Error! finalHeatDistribution");   
       exit(1);             
-   }
+   }*/
 
 /* Declare variables */ 
     int i,j,k,n;
@@ -155,13 +154,19 @@ int main(){
       }/* end Y SWEEP */
     }/* end time  */
 
-  /* Writing data to file finalHeatDistribution.txt */
+  /* Writing data to file finalHeatDistribution.txt *//*
     for (j=0;j<=N;j++){
       for (i=0;i<=N;i++){
           fprintf(finalHeatDistribution,"%f %f %f\n",dx*i,dy*j,T[i][j]);     
       }
     }
 
-    fclose(finalHeatDistribution);
+    fclose(finalHeatDistribution);*/
+	for (j=0;j<=N;j++){
+	   for (i=0;i<=N;i++){
+	      printf("%f %f %f\n", dx*i,dy*j,T[i][j]);
+	   }
+	}
+
     return 0;
 }
