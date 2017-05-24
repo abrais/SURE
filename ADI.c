@@ -4,7 +4,7 @@
 #define PI 3.1415926535897932384
 
 int main(){
-
+/* Adding my name */
 /* Open txt file to write data */
    FILE *finalHeatDistribution;
    finalHeatDistribution = fopen("finalHeatDistribution.txt","w");
