@@ -167,6 +167,6 @@ int main(){
 	      printf("%f %f %f\n", dx*i,dy*j,T[i][j]);
 	   }
 	}
-
+	printf("Done'zo");
     return 0;
 }
