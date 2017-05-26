@@ -167,7 +167,7 @@ int main(){
 	      printf("%f %f %f\n", dx*i,dy*j,T[i][j]);
 	   }
 	}
-	
+hmmmmmmm	
     return 0;
 
 }
